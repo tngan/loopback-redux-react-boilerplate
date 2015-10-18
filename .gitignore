@@ -10,6 +10,7 @@
 *.swp
 *.tgz
 *.xml
+*.save
 .DS_Store
 .idea
 .project
@@ -17,3 +18,4 @@
 coverage
 node_modules
 npm-debug.log
+.build/dist

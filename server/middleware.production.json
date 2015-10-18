@@ -1,4 +1,9 @@
 {
+  "files": {
+    "loopback#static": {
+      "params": "$!../.build"
+    }
+  },
   "final:after": {
     "loopback#errorHandler": {
       "params": {

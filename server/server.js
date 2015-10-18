@@ -2,12 +2,17 @@ var loopback = require('loopback');
 var boot = require('loopback-boot');
 var app = module.exports = loopback();
 var webpack = require('webpack');
+var env = require('./environment');
+var mode = process.env.NODE_ENV || env.DEVELOPMENT;
 var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackHotMiddleware = require('webpack-hot-middleware');
-var config = require('../webpack.config');
+var config = require(`../webpack.config.${mode}`);
 var compiler = webpack(config);
 
-app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }));
+if(mode === env.DEVELOPMENT) {
+    // only need in development
+    app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }));  
+}
 app.use(webpackHotMiddleware(compiler));
 
 boot(app, __dirname);
