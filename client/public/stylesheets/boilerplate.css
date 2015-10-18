@@ -1,0 +1,13 @@
+/*
+ * This stylesheet can be imported to any dumb components under /components
+ * Remarks: It's suggested those Smart components under /containers not to apply their own style
+ *
+ * import '../public/stylesheets/boilerplate.css'
+ *
+ * It's required css-loader in webpack.config.js, and it's already included in package.json.
+ * You can also use your own loader by modifying the setting in webpack.config.js
+ *
+ */
+p.text {
+	color: #DCAA45;
+}
