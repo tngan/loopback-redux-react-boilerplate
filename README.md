@@ -2,27 +2,43 @@
 
 A boilerplate for a Redux-React application using LoopBack
 
-Get Started
----
-
-Clone repo
+##Get Started
+- **Clone this repository or use npm**
 ```bash
 $ git clone https://github.com/tngan/loopback-redux-react-boilerplate.git
 ```
+```bash
+$ npm install loopback-redux-react-boilerplate
+```
 
-Install dependencies specified in package.json
+- **Install dependencies specified in package.json**
 ```bash
 $ npm install
 ```
 
-Start the server
+- **Start the server (default port is set to 3000)**
 ```bash
 $ npm start
 ```
 
-Access `localhost:3000`
+##Scripts
+- **npm run deploy**: Bundles the application into .build/dist.
 
-Examples
----
+- **npm run start_prod**: Starts production server, make sure you have already deployed the application.
 
-Coming soon ...
+- **npm run clean**: Removes the bundled files.
+
+##Built-in example
+A simple 'Hello World'-type Redux-React application is included in this boilerplate. You can find those files under /client.
+
+Hot reloading is only applied in development mode. When you simply modify and save the files (e.g. stylesheet and component.js), then you can see the change in real-time.
+
+In production mode, the code base is pre-compiled and placed under `.build/dist`.
+
+##License
+
+[MIT](LICENSE)
+
+## Copyright
+
+Copyright (C) 2015 Tony Ngan, released under the MIT License.

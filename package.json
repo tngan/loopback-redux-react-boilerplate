@@ -8,6 +8,14 @@
     "deploy": "NODE_ENV=production webpack -p --config webpack.config.production.js --progress",
     "clean": "rm -rf .build/dist"
   },
+  "keywords": [
+    "react",
+    "redux",
+    "boilerplate",
+    "loopback",
+    "webpack",
+    "react-transform"
+  ],
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
