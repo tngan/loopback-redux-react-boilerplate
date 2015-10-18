@@ -22,18 +22,16 @@ $ npm start
 ```
 
 ##Scripts
-- **npm run deploy**: Bundles the application into .build/dist.
+- **npm run deploy**: Bundles the application into `.build/dist`.
 
 - **npm run start_prod**: Starts production server, make sure you have already deployed the application.
 
 - **npm run clean**: Removes the bundled files.
 
 ##Built-in example
-A simple 'Hello World'-type Redux-React application is included in this boilerplate. You can find those files under /client.
+A simple 'Hello World' Redux-React application is included in this boilerplate. You can find those files under `/client`.
 
-Hot reloading is only applied in development mode. When you simply modify and save the files (e.g. stylesheet and component.js), then you can see the change in real-time.
-
-In production mode, the code base is pre-compiled and placed under `.build/dist`.
+Hot reloading is only applied in development mode. In production mode, the code base is pre-compiled and placed under `.build/dist`.
 
 ##License
 
