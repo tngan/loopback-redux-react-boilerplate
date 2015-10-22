@@ -1,6 +1,6 @@
 {
   "name": "loopback-redux-react-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "server/server.js",
   "scripts": {
     "start": "node .",
