@@ -39,4 +39,4 @@ Hot reloading is only applied in development mode. In production mode, the code 
 
 ### Copyright
 
-Copyright (C) 2015 Tony Ngan, released under the MIT License.
+Copyright (C) 2016 Tony Ngan, released under the MIT License.
