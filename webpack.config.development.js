@@ -14,20 +14,21 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin()
   ],
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['babel'],
+      loaders: ['babel-loader'],
       exclude: /node_modules/,
       include: path.join(__dirname, 'client')
-    },{
-      test: /\.json$/, 
-      loader: 'json'
-    },{
+    },
+    {
       test: /\.css$/,
-      loader: 'style!css'
+      use: [
+        { loader: "style-loader" },
+        { loader: "css-loader" }
+      ]
     }]
   }
 };
