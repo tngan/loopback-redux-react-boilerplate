@@ -13,15 +13,21 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['babel'],
+      loaders: ['babel-loader'],
       exclude: /node_modules/,
       include: path.join(__dirname, 'client')
-    },{
-      test: /\.json$/, 
-      loader: 'json'
-    },{
+    },
+    {
       test: /\.css$/,
-      loader: 'style!css'
+      use: [
+        { loader: "style-loader" },
+        { loader: "css-loader" }
+      ]
     }]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    }),
+  ]
 };
