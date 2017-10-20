@@ -9,23 +9,17 @@ $ git clone https://github.com/tngan/loopback-redux-react-boilerplate.git
 ```
 
 - **Install dependencies specified in package.json**  
-
-`npm`
 ```bash
+# npm
 $ npm install
-```
-`yarn`
-```bash
+# yarn
 $ yarn install
 ```
 - **Start the server (default port is set to 3000)**
-
-`npm`
 ```bash
+# npm
 $ npm start
-```
-`yarn`
-```bash
+# yarn
 $ yarn start
 ```
 
