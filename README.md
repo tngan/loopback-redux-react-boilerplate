@@ -7,26 +7,34 @@ A boilerplate for a Redux-React application using LoopBack
 ```bash
 $ git clone https://github.com/tngan/loopback-redux-react-boilerplate.git
 ```
-```bash
-$ npm install loopback-redux-react-boilerplate
-```
 
-- **Install dependencies specified in package.json**
+- **Install dependencies specified in package.json**  
+
+`npm`
 ```bash
 $ npm install
 ```
-
+`yarn`
+```bash
+$ yarn install
+```
 - **Start the server (default port is set to 3000)**
+
+`npm`
 ```bash
 $ npm start
 ```
+`yarn`
+```bash
+$ yarn start
+```
 
 ### Scripts
-- **npm run deploy**: Bundles the application into `.build/dist`.
+- **npm run deploy** or **yarn deploy**: Bundles the application into `.build/dist`.
 
-- **npm run start_prod**: Starts production server, make sure you have already deployed the application.
+- **npm run start_prod** or **yarn start_prod**: Starts production server, make sure you have already deployed the application.
 
-- **npm run clean**: Removes the bundled files.
+- **npm run clean** or **yarn clean**: Removes the bundled files.
 
 ### Built-in example
 A simple 'Hello World' Redux-React application is included in this boilerplate. You can find those files under `/client`.
